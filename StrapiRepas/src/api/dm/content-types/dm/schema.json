@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dms",
+  "info": {
+    "singularName": "dm",
+    "pluralName": "dms",
+    "displayName": "DM"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "onoff": {
+      "type": "boolean"
+    }
+  }
+}

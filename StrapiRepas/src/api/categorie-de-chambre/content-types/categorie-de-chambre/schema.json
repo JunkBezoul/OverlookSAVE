@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "categorie_de_chambres",
+  "info": {
+    "singularName": "categorie-de-chambre",
+    "pluralName": "categorie-de-chambres",
+    "displayName": "categorie de chambre"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "categorie": {
+      "type": "enumeration",
+      "enum": [
+        "luxe",
+        "theme",
+        "eco"
+      ]
+    },
+    "chambres": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::chambre.chambre",
+      "mappedBy": "categorie_de_chambre"
+    },
+    "category": {
+      "type": "uid"
+    }
+  }
+}

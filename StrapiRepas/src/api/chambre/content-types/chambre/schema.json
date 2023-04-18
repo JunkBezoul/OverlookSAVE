@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "chambres",
+  "info": {
+    "singularName": "chambre",
+    "pluralName": "chambres",
+    "displayName": "Chambre",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Nom": {
+      "type": "string"
+    },
+    "Photo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "prix": {
+      "type": "richtext"
+    },
+    "personne": {
+      "type": "richtext"
+    },
+    "taille": {
+      "type": "richtext"
+    },
+    "categorie_de_chambre": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::categorie-de-chambre.categorie-de-chambre",
+      "inversedBy": "chambres"
+    }
+  }
+}

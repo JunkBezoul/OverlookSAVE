@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Overlook Hotel, enjoy your stay forever and ever">
+    <script src="https://kit.fontawesome.com/63c9c27582.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.google.com/specimen/Satisfy" rel="stylesheet">
+
+    <title>The Overlook Hotel, enjoy your stay forever and ever</title>
+</head>
+
+<body>
+    <header class="top" id="index1">
+        <nav>
+            <label for="toggle">☰</label>
+            <input type="checkbox" id="toggle">
+            <div class="test">
+                <a href="index.html">Accueil</a>
+                <a href="rooms.html">Chambres</a>
+                <a href="eat.html">Repas</a>
+                <a href="services.html">Services</a>
+                <div id="social"><a href="http://www.instagram.com" target="_blank"><i
+                            class="fa-brands fa-instagram"></i></a><a href="http://www.facebook.com" target="_blank"><i
+                            class="fa-brands fa-square-facebook"></i></a>
+                    <a href="http://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+        </nav>
+        <div class="logotext">
+            <div>
+                <img id="logo" src="img/overlook_logo_large.png" alt="logo Overlook">
+            </div>
+            <div id="textheader">
+                <p>Ici on est bien, et on s’amuse bien</p>
+            </div>
+        </div>
+    </header>
+    <section-1 class="section">
+        <img src="img/DM.png" onclick="myFunction()" title="Dark Mode" type="button" class="clickonit" id="dmbutton">
+        <div id="Tellme">
+            <h1>L’ Overlook Hotel :</h1><br>
+            <p>
+                Envie de passer un hiver en famille, loin de l’agitation urbaine? Ou envie de trouver l’inspiration pour
+                écrire votre roman?<br>
+                Réservez dès maintenant votre chambre, dans un environnement très calme, idéal pour vous ressourcer.
+            </p>
+        </div>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="img/colorado-lounge.jpg" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="img/ColoradoLounge_Shining-1280x720.png" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="img/The_Shining_Warner_Bros_1980.jpg" alt="Third slide">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+
+        </div>
+
+        <div class="advisor">
+            <h3>Nos clients s'expriment</h3>
+            <div class="divadvisor">
+                <div id="profile">
+                    <div id="photo"></div>
+                    <h5 id="textprofile"></h5>
+                </div>
+                <div>
+                    <p id="quote"></p>
+                </div>
+            </div>
+        </div>
+
+        <div id="icons">
+            <img src="img/2414065.png" alt="phone">
+            <img src="img/63596.png" alt="Wifi">
+            <img src="img/image.png" alt="Axe">
+            <img src="img/typewriter.png" alt="typewriter">
+        </div>
+
+        <a href="#top"><i id="arrowup" class="fa-solid fa-up-long fa-beat-fade" style="color: #001233;"></i></a>
+    </section-1>
+    <footer>
+        <a href="admin.html">
+            <p id="Admin">Admin</p>
+        </a>
+        <a href="https://goo.gl/maps/3CnUpfG2iT9aKbdN9" target="_blank">
+            <p id="Adress">The Overlook Hotel, Comté de Clackamas, Oregon</p>
+        </a>
+        <a href="copyright.html">
+            <p id="copy">Screaming Gang &copy;</p>
+        </a>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <script src="js/advisor.js"></script>
+    <script src="js/darkmode.js"></script>
+
+</body>
+
+</html>

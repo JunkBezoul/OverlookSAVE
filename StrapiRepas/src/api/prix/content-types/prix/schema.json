@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "prixes",
+  "info": {
+    "singularName": "prix",
+    "pluralName": "prixes",
+    "displayName": "Prix"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Prix": {
+      "type": "string"
+    },
+    "formule": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::formule.formule",
+      "mappedBy": "prix"
+    }
+  }
+}
